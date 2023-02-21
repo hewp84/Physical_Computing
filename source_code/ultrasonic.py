@@ -18,8 +18,8 @@ def getDistance(trigger, echo):
     d = (end - start) * 0.0343 / 2 #traveling time x speed of sound(343.2 m/s，0.0343 for each microsecond)，the total distance is divided by 2
     return d
 # set pins
-trigger = Pin(2, Pin.OUT)
-echo = Pin(3, Pin.IN)
+trigger = Pin(2, Pin.OUT) #GPIO 2
+echo = Pin(3, Pin.IN) # GPIO 3
 # main program
 while True:
     distance = getDistance(trigger, echo)

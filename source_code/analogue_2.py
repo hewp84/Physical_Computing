@@ -2,7 +2,7 @@
 import machine
 from time import sleep
 
-analog_port = machine.ADC(26)
+analog_port = machine.ADC(26) #ADC GPIO 26
 
 while True:
     value = analog_port.read_u16()
