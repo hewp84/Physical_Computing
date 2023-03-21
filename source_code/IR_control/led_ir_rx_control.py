@@ -16,7 +16,7 @@ def callback(data, addr, ctrl):
         if data == 22:
             light()    
         
-ir = NEC_8(Pin(16, Pin.IN), callback)
+ir = NEC_8(Pin(17, Pin.IN), callback)
 
 while True:
     pass

@@ -32,12 +32,12 @@ def callback(data, addr, ctrl):
         print(data)
         if data == 22:
             light()
-        if data == 25:
+        if data == 67:
             adder()
-        if data == 13:
+        if data == 68:
             subber()
         
-ir = NEC_8(Pin(16, Pin.IN), callback)
+ir = NEC_8(Pin(17, Pin.IN), callback)
 
 while True:
     pass
